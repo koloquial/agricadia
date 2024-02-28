@@ -1,0 +1,119 @@
+:root{
+    --white: #fff;
+    --yellow: #F7D381;
+    --green: #69A84A;
+    --red: #FD717E;
+    --purple: #9B68B5;
+    --gray: #649B94;
+    --blue: #2774B0;
+}
+
+.title{
+    font-family: "Italianno", cursive;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.small{
+    font-size: smaller;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.center{
+    text-align: center;
+}
+
+.button_yellow{
+    border: 1px solid var(--yellow);
+    height: 100%;
+}
+
+.button_yellow:hover, .button_yellow_active{
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.button_yellow_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.button_green{
+    border: 1px solid var(--green);
+    height: 100%;
+}
+
+.button_green:hover, .button_green_active{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.button_green_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.button_red{
+    border: 1px solid var(--red);
+    height: 100%;
+}
+
+.button_red:hover, .button_red_active{
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+
+.button_red_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.button_purple{
+    border: 1px solid var(--purple);
+    height: 100%;
+}
+
+.button_purple:hover, .button_purple_active{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+.button_purple_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.button_gray{
+    border: 1px solid var(--gray);
+    height: 100%;
+}
+
+.button_gray:hover, .button_gray_active{
+    background-color: var(--gray);
+    border: 1px solid var(--gray);
+}
+
+.button_gray_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.button_blue{
+    border: 1px solid var(--blue);
+    height: 100%;
+}
+
+.button_blue:hover, .button_blue_active{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.button_blue_disabled{
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
