@@ -2,7 +2,7 @@ import shrimpFarmImage from '../../images/shrimpAquaculture.png';
 
 const aqua_shrimpFarm = {
     "name": "Shrimp Aquaculture",
-    "type": "Gray",
+    "type": "gray",
     "description": "An aquaculture facility dedicated to raising shrimp in controlled ponds or tanks. Shrimp are prized for their sweet flavor and are popular in a variety of cuisines.",
     "image": shrimpFarmImage,
     "purchase": 120,

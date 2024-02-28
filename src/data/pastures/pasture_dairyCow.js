@@ -2,7 +2,7 @@ import dairyCowImage from '../../images/dairyCow.png';
 
 const pasture_dairyCow = {
     "name": "Dairy Cow",
-    "type": "gray",
+    "type": "brown",
     "description": "Lush green pastures dotted with contented dairy cows, their gentle lowing filling the air. Milk produced here is used to make a variety of dairy products, from creamy cheeses to rich ice creams.",
     "image": dairyCowImage,
     "purchase": 140,

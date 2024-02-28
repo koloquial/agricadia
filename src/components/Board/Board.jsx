@@ -29,8 +29,8 @@ import aqua_crawfishFarm from '../../data/aquaculture/aqua_crawfishFarm.js';
 import aqua_oysterFarm from '../../data/aquaculture/aqua_oysterFarm.js';
 import aqua_shrimpFarm from '../../data/aquaculture/aqua_shrimpFarm.js';
 
-import aqua_troutPond from '../../data/aquaculture/aqua_troutPond.js';
-import aqua_salmonHatchery from '../../data/aquaculture/aqua_salmonHatchery.js';
+import aqua_tuna from '../../data/aquaculture/aqua_tuna.js';
+import aqua_swordfish from '../../data/aquaculture/aqua_swordfish.js';
 
 const Board = () => {
 
@@ -61,8 +61,8 @@ const Board = () => {
     const [oysterFarm, setOysterFarm] = useState(0);
     const [crawfishFarm, setCrawfishFarm] = useState(0);
 
-    const [troutPond, setTroutPond] = useState(0);
-    const [salmonHatchery, setSalmonHatchery] = useState(0);
+    const [tuna, setTuna] = useState(0);
+    const [swordfish, setSwordfish] = useState(0);
 
     return (
         <div className='container'>
@@ -95,8 +95,8 @@ const Board = () => {
             <Card data={aqua_shrimpFarm} upgrades={[shrimpFarm, setShrimpFarm]} />
             <Card data={aqua_oysterFarm} upgrades={[oysterFarm, setOysterFarm]} />
 
-            <Card data={aqua_troutPond} upgrades={[troutPond, setTroutPond]} />
-            <Card data={aqua_salmonHatchery} upgrades={[salmonHatchery, setSalmonHatchery]} />
+            <Card data={aqua_tuna} upgrades={[tuna, setTuna]} />
+            <Card data={aqua_swordfish} upgrades={[swordfish, setSwordfish]} />
         </div>
     )
 }

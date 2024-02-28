@@ -2,7 +2,7 @@ import chickenCoopImage from '../../images/chickenCoop.png';
 
 const pasture_chickenCoop = {
     "name": "Chicken Coop",
-    "type": "gray",
+    "type": "brown",
     "description": "Cozy chicken coops nestled among the trees, where hens scratch and peck for bugs. Fresh eggs are collected daily, providing a nutritious source of protein.",
     "image": chickenCoopImage,
     "purchase": 140,

@@ -2,7 +2,7 @@ import pigPenImage from '../../images/pigPen.png';
 
 const pasture_pigPen = {
     "name": "Pig Pen",
-    "type": "gray",
+    "type": "brown",
     "description": "Muddy pig pens filled with contented pigs, their snouts buried in troughs of feed. Farmers raise pigs for their flavorful meat, which is used in a variety of dishes.",
     "image": pigPenImage,
     "purchase": 140,
