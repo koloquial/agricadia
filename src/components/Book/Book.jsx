@@ -7,10 +7,8 @@ const Book = () => {
     let numberOfPapers = 3;
     let maxLocation = numberOfPapers + 1;
 
-    
-
     function openBook(){
-        document.getElementById('book').style.transform = 'translateX(50%)';
+        document.getElementById('book').style.transform = 'translateX(-60%)';
     }
 
     function closeBook(isAtBeginning){
@@ -78,14 +76,20 @@ const Book = () => {
                 <div id='p1' className='paper'>
                     <div className='front' onClick={nextPage}>
                         <div id='f1' className='front-content'>
-                            <p className='faded'>Agricadia</p>
-                            <p className='faded basic'>Instruction Manual</p>
+                            <h3 className='faded'>Agricadia</h3>
+                            <h2 className='faded basic'>Instruction Manual</h2>
                             <img src={instruction1} style={{width: '100%'}} />
                         </div>
                     </div>
                     <div className='back' onClick={previousPage}>
                         <div id='b1' className='back-content'>
-                            
+                            <br /><br /><br /><br />
+                            <p className='subtext center'>
+                                Attribution-NonCommercial-NoDerivatives 4.0 International. This license requires that reusers give credit to the creator. It allows reusers to copy and distribute the material in any medium or format in unadapted form and for noncommercial purposes only.
+
+                                <br /><br />
+                                Created by Nicholas R. Kolodziej, 2024.  For more information on the development of <span className='italic'>Agricadia</span>, read further in the instruction manual.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +98,20 @@ const Book = () => {
                     <div className='front' onClick={nextPage}>
                         <div id='f2' className='front-content'>
                             <p className='faded basic center'>Index</p>
-                            <br />
+                            <hr />
+                            <div className='container fluid'>
+
+                          
+                            <div className='row'>
+                                <div className='col'>
+                                    <p className='faded basic'>How to Play</p>
+                                </div>
+                                <div className='col'>
+                                <p className='faded basic'>pg. 4</p>
+                                </div>
+                            </div>
+
+
                             <div className='row'>
                                 <div className='col'>
                                     <p className='faded basic'>Game Pieces</p>
@@ -106,20 +123,13 @@ const Book = () => {
 
                             <div className='row'>
                                 <div className='col'>
-                                    <p className='faded basic'>How to Play</p>
-                                </div>
-                                <div className='col'>
-                                <p className='faded basic'>pg. 4</p>
-                                </div>
-                            </div>
-
-                            <div className='row'>
-                                <div className='col'>
                                     <p className='faded basic'>About</p>
                                 </div>
                                 <div className='col'>
                                 <p className='faded basic'>pg. 6</p>
                                 </div>
+                            </div>
+
                             </div>
 
                         </div>
