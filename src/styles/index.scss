@@ -84,3 +84,13 @@ body{
     width: 200px;
     transform: rotate(-10deg);
 }
+
+.game-box{
+    width: 300px;
+    transition: .5s;
+}
+
+.game-box:hover{
+    width: 400px;
+    transform: rotate(25deg);
+}

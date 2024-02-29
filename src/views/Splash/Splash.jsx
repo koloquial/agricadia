@@ -18,9 +18,9 @@ const Splash = () => {
                 <div className='row h-100'>
                     <div className='col-sm-12 my-auto'>
                         <div className='text-center'>
-                        <Link to='dash'><img src={activeTitle} style={{maxWidth: '400px'}} /></Link>
-                        <br /><br />
-                            <h4>Click the box.</h4>
+                        <Link to='dash'><img src={activeTitle} className='game-box' /></Link>
+                        <br /><br /><br /><br />
+                            <h4>Click the box to open.</h4>
                         </div>
                     </div>
                 </div>
