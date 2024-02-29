@@ -4,7 +4,7 @@ const pasture_chickenCoop = {
     "name": "Chicken Coop",
     "type": "brown",
     "description": "Cozy chicken coops nestled among the trees, where hens scratch and peck for bugs. Fresh eggs are collected daily, providing a nutritious source of protein.",
-    "image": chickenCoopImage,
+    "images": chickenCoopImage,
     "purchase": 140,
     "mortgage": 70,
     "income": 10,

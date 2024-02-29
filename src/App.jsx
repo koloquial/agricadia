@@ -1,13 +1,16 @@
-import Board from "./components/Board"
 
-function App() {
+import Splash from "./views/Splash";
+import About from "./views/About";
 
+const App = () => {
   return (
-    <>
-    <h1 className='title'>Agricraze</h1>
-        <Board />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' component={Splash} />
+        <Route exact path='/about' component={About} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;

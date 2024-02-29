@@ -1,10 +1,15 @@
-import crawfishFarmImage from '../../images/crawfishFarm.png';
+import crawfish1 from '../../images/crawfish-1.jpeg';
+import crawfish2 from '../../images/crawfish-2.jpeg';
+import crawfish3 from '../../images/crawfish-3.jpeg';
+import crawfish4 from '../../images/crawfish-4.jpeg';
+import crawfish5 from '../../images/crawfish-5.jpeg';
+import crawfish6 from '../../images/crawfish-6.jpeg';
 
 const aqua_crawfishFarm = {
     "name": "Crawfish Aquaculture",
     "type": "gray",
     "description": "Rolling hills carpeted with fields of barley, their slender stalks swaying gently in the wind. Birds flit among the plants, feasting on insects and adding to the bucolic scene.",
-    "image": crawfishFarmImage,
+    "images": [crawfish1, crawfish2, crawfish3, crawfish4, crawfish5, crawfish6],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,

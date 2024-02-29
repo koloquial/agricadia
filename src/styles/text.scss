@@ -1,0 +1,39 @@
+.bold{
+    font-weight: bold;
+}
+
+.small{
+    font-size: smaller;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.center{
+    text-align: center;
+}
+
+.subtext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    font-weight: 100;
+    cursor: default;
+}
+
+.basic{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100; 
+    cursor: default;
+}
+
+.faded{
+    opacity: 0.8;
+}
+
+p, h1, h2, h3, h4, h5, button{
+    font-family: "Rosarivo", cursive;
+    font-weight: 800;
+    font-style: normal;
+    cursor: default;
+}

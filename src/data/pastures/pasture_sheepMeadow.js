@@ -1,10 +1,12 @@
-import sheepMeadowImage from '../../images/sheepMeadow.png';
+import sheep1 from '../../images/sheep-1.jpeg';
+import sheep2 from '../../images/sheep-2.jpeg'
+import sheep3 from '../../images/sheep-3.jpeg'
 
 const pasture_sheepMeadow = {
     "name": "Sheep Meadow",
     "type": "blue",
     "description": "Rolling hills covered with soft, green grass, where fluffy sheep graze peacefully. The gentle bleating of lambs echoes across the meadow, creating a serene atmosphere.",
-    "image": sheepMeadowImage,
+    "images": [sheep1, sheep2, sheep3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
