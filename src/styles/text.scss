@@ -1,5 +1,5 @@
 .bold{
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .small{
@@ -12,6 +12,10 @@
 
 .center{
     text-align: center;
+}
+
+.right{
+    text-align: right;
 }
 
 .subtext{

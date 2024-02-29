@@ -47,7 +47,7 @@
     width: 100%;
     height: 100%;
     text-align: left;
-    padding: 25px;
+    padding: 10px;
 }
 
 .flipped .front, .flipped .back{
@@ -64,4 +64,12 @@
 
 #p3{
     z-index: 1;
+}
+
+.manual-numeration{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: smaller;
 }

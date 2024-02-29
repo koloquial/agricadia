@@ -97,39 +97,38 @@ const Book = () => {
                 <div id='p2' className='paper'>
                     <div className='front' onClick={nextPage}>
                         <div id='f2' className='front-content'>
-                            <p className='faded basic center'>Index</p>
-                            <hr />
-                            <div className='container fluid'>
 
-                          
-                            <div className='row'>
-                                <div className='col'>
-                                    <p className='faded basic'>How to Play</p>
-                                </div>
-                                <div className='col'>
-                                <p className='faded basic'>pg. 4</p>
-                                </div>
-                            </div>
-
+                            <p className='faded basic center bold'>Table of Contents</p>
 
                             <div className='row'>
                                 <div className='col'>
-                                    <p className='faded basic'>Game Pieces</p>
+                                    <p className='faded basic small'>How to Play</p>
                                 </div>
                                 <div className='col'>
-                                <p className='faded basic'>pg. 2</p>
+                                <p className='faded basic small right'>pg. 4</p>
                                 </div>
                             </div>
 
                             <div className='row'>
                                 <div className='col'>
-                                    <p className='faded basic'>About</p>
+                                    <p className='faded basic small'>Game Pieces</p>
                                 </div>
                                 <div className='col'>
-                                <p className='faded basic'>pg. 6</p>
+                                <p className='faded basic small right'>pg. 2</p>
                                 </div>
                             </div>
 
+                            <div className='row'>
+                                <div className='col'>
+                                    <p className='faded basic small'>About</p>
+                                </div>
+                                <div className='col'>
+                                <p className='faded basic small right'>pg. 6</p>
+                                </div>
+                            </div>
+
+                            <div className='manual-numeration'>
+                                <p>1</p>
                             </div>
 
                         </div>
@@ -137,6 +136,10 @@ const Book = () => {
                     <div className='back' onClick={previousPage}>
                         <div id='b2' className='back-content'>
                             back 2
+
+                            <div className='manual-numeration'>
+                                <p>2</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,11 +148,19 @@ const Book = () => {
                     <div className='front' onClick={nextPage}>
                         <div id='f3' className='front-content'>
                             front 3
+
+                            <div className='manual-numeration'>
+                                <p>3</p>
+                            </div>
                         </div>
                     </div>
                     <div className='back' onClick={previousPage}>
                         <div id='b3' className='back-content'>
                             back 3
+
+                            <div className='manual-numeration'>
+                                <p>4</p>
+                            </div>
                         </div>
                     </div>
                 </div>
