@@ -1,4 +1,5 @@
-.card{
+.property-card{
+    position: relative;
     height: 600px !important;
     width: 400px !important;
     background-size: cover;
@@ -12,7 +13,7 @@
     border: 1px solid black;
 }
 
-.card-header{
+.property-card-header{
     text-align: center;
     width: 100%;
     height: 40px;
@@ -22,13 +23,13 @@
     cursor: pointer;
 }
 
-.card-header:hover{
+.property-card-header:hover{
     opacity: 70%;
 }
 
-.card-content{
+.property-card-content{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     padding: 5px;
     margin: 0px;
     width: 100%;
@@ -38,7 +39,7 @@
     border-top: 1px dotted black;
 }
 
-.card-nav{
+.property-card-nav{
     padding: 5px;
     margin: 0px;
     width: 100%;
@@ -49,7 +50,7 @@
     border-radius: 0 !important;
 }
 
-.card-view{
+.property-card-view{
     display: block;
     position: relative;
     padding: 5px;
@@ -62,7 +63,7 @@
     border-bottom: 1px dotted black;
 }
 
-.card-upgrade{
+.property-card-upgrade{
     display: inline-block;
     margin: 10px;
 }

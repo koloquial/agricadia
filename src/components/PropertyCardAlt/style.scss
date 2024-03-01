@@ -1,0 +1,390 @@
+.property-card-alt{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border: 10px solid #f4e9b3;
+    border-radius: 25px;
+}
+
+.property-card-alt-pile{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.property-card-alt-1{
+    position: absolute;
+    transition: .5s;
+}
+
+.property-card-alt-1-spread{
+    transition: .5s;
+    transform: translateX(0px) translateY(0px);
+}
+
+.property-card-alt-1-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(0px) translateY(-100px);
+}
+
+.property-card-alt-2{
+    position: absolute;
+    top: 2px;
+    transition: .5s;
+}
+
+.property-card-alt-2-spread{
+    transition: .5s;
+    transform: translateX(40px) translateY(-2px);
+}
+
+.property-card-alt-2-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(40px) translateY(-100px);
+}
+
+.property-card-alt-3{
+    position: absolute;
+    top: 4px;
+    transition: .5s;
+}
+
+.property-card-alt-3-spread{
+    transition: .5s;
+    transform: translateX(80px) translateY(-4px);
+}
+
+.property-card-alt-3-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(80px) translateY(-100px);
+}
+
+.property-card-alt-4{
+    position: absolute;
+    top: 6px;
+    transition: .5s;
+}
+
+.property-card-alt-4-spread{
+    transition: .5s;
+    transform: translateX(120px) translateY(-6px);
+}
+
+.property-card-alt-4-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(120px) translateY(-100px);
+}
+
+.property-card-alt-5{
+    position: absolute;
+    top: 8px;
+    transition: .5s;
+}
+
+.property-card-alt-5-spread{
+    transition: .5s;
+    transform: translateX(160px) translateY(-8px);
+}
+
+.property-card-alt-5-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(160px) translateY(-100px);
+}
+
+.property-card-alt-6{
+    position: absolute;
+    top: 10px;
+    transition: .5s;
+}
+
+.property-card-alt-6-spread{
+    transition: .5s;
+    transform: translateX(200px) translateY(-10px);
+}
+
+.property-card-alt-6-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(200px) translateY(-100px);
+}
+
+.property-card-alt-7{
+    position: absolute;
+    top: 12px;
+    transition: .5s;
+}
+
+.property-card-alt-7-spread{
+    transition: .5s;
+    transform: translateX(240px) translateY(-12px);
+}
+
+.property-card-alt-7-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(240px) translateY(-100px);
+}
+
+.property-card-alt-8{
+    position: absolute;
+    top: 14px;
+}
+
+.property-card-alt-8-spread{
+    transition: .5s;
+    transform: translateX(280px) translateY(-14px);
+}
+
+.property-card-alt-8-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(280px) translateY(-100px);
+}
+
+.property-card-alt-9{
+    position: absolute;
+    top: 16px;
+    transition: .5s;
+}
+
+.property-card-alt-9-spread{
+    transition: .5s;
+    transform: translateX(320px) translateY(-16px);
+}
+
+.property-card-alt-9-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(320px) translateY(-100px);
+}
+
+.property-card-alt-10{
+    position: absolute;
+    top: 18px;
+    transition: .5s;
+}
+
+.property-card-alt-10-spread{
+    transition: .5s;
+    transform: translateX(360px) translateY(-18px);
+}
+
+.property-card-alt-10-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(360px) translateY(-100px);
+}
+
+.property-card-alt-11{
+    position: absolute;
+    top: 20px;
+}
+
+.property-card-alt-11-spread{
+    transition: .5s;
+    transform: translateX(400px) translateY(-20px);
+}
+
+.property-card-alt-11-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(400px) translateY(-100px);
+}
+
+.property-card-alt-12{
+    position: absolute;
+    top: 22px;
+    transition: .5s;
+}
+
+.property-card-alt-12-spread{
+    transition: .5s;
+    transform: translateX(440px) translateY(-22px);
+}
+
+.property-card-alt-12-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(440px) translateY(-100px);
+}
+
+.property-card-alt-13{
+    position: absolute;
+    top: 24px;
+    transition: .5s;
+}
+
+.property-card-alt-13-spread{
+    transition: .5s;
+    transform: translateX(480px) translateY(-24px);
+}
+
+.property-card-alt-13-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(480px) translateY(-100px);
+}
+
+.property-card-alt-14{
+    position: absolute;
+    top: 26px;
+}
+
+.property-card-alt-14-spread{
+    transition: .5s;
+    transform: translateX(520px) translateY(-26px);
+}
+
+.property-card-alt-14-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(520px) translateY(-100px);
+}
+
+.property-card-alt-15{
+    position: absolute;
+    top: 30px;
+    transition: .5s;
+}
+
+.property-card-alt-15-spread{
+    transition: .5s;
+    transform: translateX(560px) translateY(-30px);
+}
+
+.property-card-alt-15-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(560px) translateY(-100px);
+}
+
+.property-card-alt-16{
+    position: absolute;
+    top: 32px;
+    transition: .5s;
+}
+
+.property-card-alt-16-spread{
+    transition: .5s;
+    transform: translateX(600px) translateY(-32px);
+}
+
+.property-card-alt-16-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(600px) translateY(-100px);
+}
+
+.property-card-alt-17{
+    position: absolute;
+    top: 34px;
+    transition: .5s;
+}
+
+.property-card-alt-17-spread{
+    transition: .5s;
+    transform: translateX(640px) translateY(-34px);
+}
+
+.property-card-alt-17-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(640px) translateY(-100px);
+}
+
+.property-card-alt-18{
+    position: absolute;
+    top: 36px;
+    transition: .5s;
+}
+
+.property-card-alt-18-spread{
+    transition: .5s;
+    transform: translateX(680px) translateY(-36px);
+}
+
+.property-card-alt-18-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(680px) translateY(-100px);
+}
+
+.property-card-alt-19{
+    position: absolute;
+    top: 38px;
+    transition: .5s;
+}
+
+.property-card-alt-19-spread{
+    transition: .5s;
+    transform: translateX(720px) translateY(-38px);
+}
+
+.property-card-alt-19-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(720px) translateY(-100px);
+}
+
+.property-card-alt-20{
+    position: absolute;
+    top: 40px;
+    transition: .5s;
+}
+
+.property-card-alt-20-spread{
+    transition: .5s;
+    transform: translateX(760px) translateY(-40px);
+}
+
+.property-card-alt-20-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(760px) translateY(-100px);
+}
+
+.property-card-alt-21{
+    position: absolute;
+    top: 42px;
+    transition: .5s;
+}
+
+.property-card-alt-21-spread{
+    transition: .5s;
+    transform: translateX(800px) translateY(-42px);
+}
+
+.property-card-alt-21-spread:hover{
+    transition: .5s;
+    z-index: 10;
+    transform: translateX(800px) translateY(-100px);
+}
+
+.property-card-alt-22{
+    position: absolute;
+    top: 44px;
+    transition: .5s;
+}
+
+.property-card-alt-22-spread{
+    transition: .5s;
+    transform: translateX(840px) translateY(-44px);
+}
+
+.property-card-alt-22-spread:hover{
+    z-index: 10;
+    transition: .5s;
+    transform: translateX(840px) translateY(-100px);
+}

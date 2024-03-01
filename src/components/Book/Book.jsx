@@ -127,7 +127,7 @@ const Book = () => {
                                 </div>
                             </div>
 
-                            <div className='manual-numeration'>
+                            <div className='manual-numeration-right'>
                                 <p>1</p>
                             </div>
 
@@ -137,7 +137,7 @@ const Book = () => {
                         <div id='b2' className='back-content'>
                             back 2
 
-                            <div className='manual-numeration'>
+                            <div className='manual-numeration-left'>
                                 <p>2</p>
                             </div>
                         </div>
@@ -149,7 +149,7 @@ const Book = () => {
                         <div id='f3' className='front-content'>
                             front 3
 
-                            <div className='manual-numeration'>
+                            <div className='manual-numeration-right'>
                                 <p>3</p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@ const Book = () => {
                         <div id='b3' className='back-content'>
                             back 3
 
-                            <div className='manual-numeration'>
+                            <div className='manual-numeration-left'>
                                 <p>4</p>
                             </div>
                         </div>

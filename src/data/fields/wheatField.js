@@ -1,10 +1,13 @@
-import wheatFieldImage from '../../images/wheatField.png';
+import wheat1 from '../../images/fields/wheat/wheat-1.jpeg';
+import wheat2 from '../../images/fields/wheat/wheat-2.jpeg';
+import wheat3 from '../../images/fields/wheat/wheat-3.jpeg';
+import wheat4 from '../../images/fields/wheat/wheat-4.jpeg';
 
-const field_wheatField = {
+const wheatField = {
     "name": "Wheat Field",
     "type": "yellow",
     "description": "A vast expanse of golden wheat fields swaying gently in the breeze. Rustic wooden fences border the perimeter, enclosing the fertile land.",
-    "image": wheatFieldImage,
+    "images": [wheat1, wheat2, wheat3, wheat4],
     "purchase": 60,
     "mortgage": 30,
     "income": 2,
@@ -42,4 +45,4 @@ const field_wheatField = {
     ]
 }
 
-export default field_wheatField;
+export default wheatField;

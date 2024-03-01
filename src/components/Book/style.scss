@@ -66,10 +66,18 @@
     z-index: 1;
 }
 
-.manual-numeration{
+.manual-numeration-right{
     display: block;
     position: absolute;
     bottom: 0;
     right: 10px;
+    font-size: smaller;
+}
+
+.manual-numeration-left{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
     font-size: smaller;
 }

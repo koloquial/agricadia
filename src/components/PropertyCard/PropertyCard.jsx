@@ -1,8 +1,9 @@
 import './style.scss';
 import { useState } from 'react';
 
-const Card = ({ data, upgrades, season, mortgage }) => {
+const PropertyCard = ({ data, upgrades, season, mortgage }) => {
     const [view, setView] = useState('');
+    const [bgImage, setBgImage] = useState(data.images[Math.floor(Math.random() * data.images.length)]);
 
     console.log('data', data);
 
@@ -19,38 +20,41 @@ const Card = ({ data, upgrades, season, mortgage }) => {
     }
 
     return (
-        <div className='card' style={{backgroundImage: `url(${data.image})`}}>
+        <div className='property-card' style={{backgroundImage: `url(${bgImage})`}}>
 
-            <div className='card-header' style={{backgroundColor: getBackgroundColor(data.type)}} onClick={() => setView('')}>
+            <div 
+                className='property-card-header' 
+                style={{backgroundColor: getBackgroundColor(data.type)}} 
+                onClick={() => setView('')}>
                 <p className='bold'>{data.name}</p>
             </div>
 
-            <div className='card-nav center'>
+            <div className='property-card-nav center'>
                 <div className='row'>
                     <div className='col'>
                         <button className={view === 'description' ? `button_${data.type}_active` : `button_${data.type}`} onClick={() => setView('description')}>Description</button>
                     </div>
                     <div className='col'>
-                    <button className={view === 'upgrades' ? `button_${data.type}_active` : `button_${data.type}`} onClick={() => setView('upgrades')}>Upgrades</button>
+                        <button className={view === 'upgrades' ? `button_${data.type}_active` : `button_${data.type}`} onClick={() => setView('upgrades')}>Upgrades</button>
                     </div>
                     <div className='col'>
-                    <button className={view === 'mortgage' ? `button_${data.type}_active` : `button_${data.type}`} onClick={() => setView('mortgage')}>Mortgage</button>
+                        <button className={view === 'mortgage' ? `button_${data.type}_active` : `button_${data.type}`} onClick={() => setView('mortgage')}>Mortgage</button>
                     </div>
                 </div>
             </div>
 
             <div>
                 {view === 'description' ? 
-                    <div className='card-view'>
+                    <div className='property-card-view'>
                         <p className='small'>{data.description}</p>
                     </div> : <></>}
 
                     {view === 'upgrades' ? 
-                    <div className='card-view'>
+                    <div className='property-card-view'>
                         <p className='small center'><span className='bold'>Cost: </span> ${data.upgradeCost} / per</p>
                         {data.upgrades.map((upgrade, index) => {
                             return (
-                                <div className='card-upgrade'>
+                                <div className='property-card-upgrade'>
                                     {upgrades[0] === index ? 
                                         <button 
                                             className={`button_${data.type}`} 
@@ -80,7 +84,7 @@ const Card = ({ data, upgrades, season, mortgage }) => {
                     </div> : <></>}
 
                     {view === 'upgrades' ? <>
-                        <div className='card-view'>
+                        <div className='property-card-view'>
                             <p className='bold small'>Active:</p>
                             <ul>
                                 {data.upgrades.map((upg, index) => {
@@ -110,8 +114,7 @@ const Card = ({ data, upgrades, season, mortgage }) => {
                     </> : <></>}
             </div>
             
-
-            <div className='card-content'>
+            <div className='property-card-content'>
                 <div className='row'>
                     <div className='col'>
                         <p className='small center'>
@@ -158,4 +161,4 @@ const Card = ({ data, upgrades, season, mortgage }) => {
     )
 }
 
-export default Card;
+export default PropertyCard;
