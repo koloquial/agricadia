@@ -1,10 +1,12 @@
-import horseRanchImage from '../../images/horseRanch.png';
+import horses1 from '../../images/pastures/horses/horses-1.jpeg';
+import horses2 from '../../images/pastures/horses/horses-2.jpeg';
+import horses3 from '../../images/pastures/horses/horses-3.jpeg';
 
-const pasture_horseRanch = {
+const horseRanch = {
     "name": "Horse Ranch",
     "type": "blue",
     "description": "Sprawling ranchlands where majestic horses roam freely, their sleek coats gleaming in the sunlight. Riders gallop across the open fields, enjoying the freedom of the countryside.",
-    "image": horseRanchImage,
+    "images": [horses1, horses2, horses3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +43,4 @@ const pasture_horseRanch = {
     ]
 }
 
-export default pasture_horseRanch;
+export default horseRanch;

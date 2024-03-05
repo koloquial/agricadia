@@ -1,11 +1,11 @@
-import crawfish1 from '../../images/crawfish-1.jpeg';
-import crawfish2 from '../../images/crawfish-2.jpeg';
-import crawfish3 from '../../images/crawfish-3.jpeg';
-import crawfish4 from '../../images/crawfish-4.jpeg';
-import crawfish5 from '../../images/crawfish-5.jpeg';
-import crawfish6 from '../../images/crawfish-6.jpeg';
+import crawfish1 from '../../images/fisheries/crawfish/crawfish-1.jpeg';
+import crawfish2 from '../../images/fisheries/crawfish/crawfish-2.jpeg';
+import crawfish3 from '../../images/fisheries/crawfish/crawfish-3.jpeg';
+import crawfish4 from '../../images/fisheries/crawfish/crawfish-4.jpeg';
+import crawfish5 from '../../images/fisheries/crawfish/crawfish-5.jpeg';
+import crawfish6 from '../../images/fisheries/crawfish/crawfish-6.jpeg';
 
-const aqua_crawfishFarm = {
+const crawfishFarm = {
     "name": "Crawfish Aquaculture",
     "type": "gray",
     "description": "Rolling hills carpeted with fields of barley, their slender stalks swaying gently in the wind. Birds flit among the plants, feasting on insects and adding to the bucolic scene.",
@@ -46,4 +46,4 @@ const aqua_crawfishFarm = {
     ]
 }
 
-export default aqua_crawfishFarm;
+export default crawfishFarm;

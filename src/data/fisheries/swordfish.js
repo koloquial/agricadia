@@ -1,10 +1,11 @@
-import swordfishImage from '../../images/swordfish.png';
+import swordfish1 from '../../images/fisheries/swordfish/swordfish-1.jpeg';
+import swordfish2 from '../../images/fisheries/swordfish/swordfish-2.jpeg';
 
-const aqua_swordfish = {
+const swordfish = {
     "name": "Swordfishing",
     "type": "blue",
     "description": "Embark on an exhilarating Swordfishing Expedition, where you'll venture into the deep blue waters in pursuit of the legendary swordfish. Equip your vessel with specialized gear, harness your angling skills, and prepare for an unforgettable fishing adventure!",
-    "image": swordfishImage,
+    "images": [swordfish1, swordfish2],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,
@@ -41,4 +42,4 @@ const aqua_swordfish = {
     ]
 }
 
-export default aqua_swordfish;
+export default swordfish;

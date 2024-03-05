@@ -1,10 +1,11 @@
-import soybeanFieldImage from '../../images/soybeanField.png';
+import soybeans1 from '../../images/fields/soybeans/soybeans-1.jpeg';
+import soybeans2 from '../../images/fields/soybeans/soybeans-2.jpeg';
 
-const field_soybeanField = {
+const soybeanField = {
     "name": "Soybean Field",
     "type": "green",
     "description": "Endless rows of soybean plants stretch out across the landscape, their delicate leaves fluttering in the breeze. Bees buzz among the flowers, pollinating the plants and ensuring a healthy crop.",
-    "image": soybeanFieldImage,
+    "images": [soybeans1, soybeans2],
     "purchase": 100,
     "mortgage": 50,
     "income": 6,
@@ -41,4 +42,4 @@ const field_soybeanField = {
     ]
 }
 
-export default field_soybeanField;
+export default soybeanField;

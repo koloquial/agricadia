@@ -1,10 +1,12 @@
-import goatFarmImage from '../../images/goatFarm.png';
+import goats1 from '../../images/pastures/goats/goat-1.jpeg';
+import goats2 from '../../images/pastures/goats/goat-2.jpeg';
+import goats3 from '../../images/pastures/goats/goat-3.jpeg';
 
-const pasture_goatFarm = {
+const goatFarm = {
     "name": "Goat Farm",
     "type": "blue",
     "description": "Rocky hillsides dotted with agile goats, their nimble hooves traversing steep terrain with ease. Goat milk and cheese produced here are prized for their rich flavor and nutritional value.",
-    "image": goatFarmImage,
+    "images": [goats1, goats2, goats3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +43,4 @@ const pasture_goatFarm = {
     ]
 }
 
-export default pasture_goatFarm;
+export default goatFarm;

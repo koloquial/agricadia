@@ -1,10 +1,15 @@
-import potatoPatchImage from '../../images/potatoPatch.png';
+import potatoes1 from '../../images/fields/potatoes/potatoes-1.jpeg';
+import potatoes2 from '../../images/fields/potatoes/potatoes-2.jpeg';
+import potatoes3 from '../../images/fields/potatoes/potatoes-3.jpeg';
+import potatoes4 from '../../images/fields/potatoes/potatoes-4.jpeg';
+import potatoes5 from '../../images/fields/potatoes/potatoes-5.jpeg';
+import potatoes6 from '../../images/fields/potatoes/potatoes-6.jpeg';
 
-const field_potatoPatch = {
+const potatoPatch = {
     "name": "Potato Patch",
     "type": "green",
     "description": "Rich, dark soil dotted with rows of potato plants, their lush green foliage hiding the treasures beneath the surface. Farmhands carefully dig up potatoes for harvest, their baskets overflowing with the bountiful crop.",
-    "image": potatoPatchImage,
+    "images": [potatoes1, potatoes2, potatoes3, potatoes4, potatoes5, potatoes6],
     "purchase": 100,
     "mortgage": 50,
     "income": 6,
@@ -41,4 +46,4 @@ const field_potatoPatch = {
     ]
 }
 
-export default field_potatoPatch;
+export default potatoPatch;

@@ -1,10 +1,12 @@
-import pigPenImage from '../../images/pigPen.png';
+import pigs1 from '../../images/pastures/pigs/pig-1.jpeg';
+import pigs2 from '../../images/pastures/pigs/pig-2.jpeg';
+import pigs3 from '../../images/pastures/pigs/pig-3.jpeg';
 
-const pasture_pigPen = {
+const pigPen = {
     "name": "Pig Pen",
     "type": "brown",
     "description": "Muddy pig pens filled with contented pigs, their snouts buried in troughs of feed. Farmers raise pigs for their flavorful meat, which is used in a variety of dishes.",
-    "image": pigPenImage,
+    "images": [pigs1, pigs2, pigs3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +43,4 @@ const pasture_pigPen = {
     ]
 }
 
-export default pasture_pigPen;
+export default pigPen;

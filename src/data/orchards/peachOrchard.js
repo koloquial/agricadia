@@ -1,10 +1,13 @@
-import peachOrchardImage from '../../images/peachOrchard.png';
+import peaches1 from '../../images/orchards/peaches/peaches-1.jpeg';
+import peaches2 from '../../images/orchards/peaches/peaches-2.jpeg';
+import peaches3 from '../../images/orchards/peaches/peaches-3.jpeg';
+import peaches4 from '../../images/orchards/peaches/peaches-4.jpeg';
 
-const orchard_peachOrchard = {
+const peachOrchard = {
     "name": "Peach Orchard",
     "type": "red",
     "description": "Delicate pink blossoms give way to fuzzy peach fruits in the peach orchard. The trees provide shade from the sun, creating a serene atmosphere.",
-    "image": peachOrchardImage,
+    "images": [peaches1, peaches2, peaches3, peaches4],
     "purchase": 160,
     "mortgage": 80,
     "income": 12,
@@ -41,4 +44,4 @@ const orchard_peachOrchard = {
     ]
 }
 
-export default orchard_peachOrchard;
+export default peachOrchard;

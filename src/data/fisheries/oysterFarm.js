@@ -1,10 +1,12 @@
-import oysterFarmImage from '../../images/oysterFarm.png';
+import oysters1 from '../../images/fisheries/oysters/oysters-1.jpeg';
+import oysters2 from '../../images/fisheries/oysters/oysters-2.jpeg';
+import oysters3 from '../../images/fisheries/oysters/oysters-3.jpeg';
 
-const aqua_oysterFarm = {
+const oysterFarm = {
     "name": "Oyster Farm",
     "type": "gray",
     "description": "An oyster farm where these bivalve mollusks are cultivated in coastal waters. Oysters are prized for their briny flavor and are enjoyed raw or cooked in various dishes.",
-    "image": oysterFarmImage,
+    "images": [oysters1, oysters2, oysters3],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,
@@ -41,4 +43,4 @@ const aqua_oysterFarm = {
     ]
 }
 
-export default aqua_oysterFarm;
+export default oysterFarm;

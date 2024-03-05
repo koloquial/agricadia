@@ -1,10 +1,11 @@
-import shrimpFarmImage from '../../images/shrimpAquaculture.png';
+import shrimp1 from '../../images/fisheries/shrimp/shrimp-1.jpeg';
+import shrimp2 from '../../images/fisheries/shrimp/shrimp-2.jpeg';
 
-const aqua_shrimpFarm = {
+const shrimpFarm = {
     "name": "Shrimp Aquaculture",
     "type": "gray",
     "description": "An aquaculture facility dedicated to raising shrimp in controlled ponds or tanks. Shrimp are prized for their sweet flavor and are popular in a variety of cuisines.",
-    "image": shrimpFarmImage,
+    "images": [shrimp1, shrimp2],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,
@@ -41,4 +42,4 @@ const aqua_shrimpFarm = {
     ]
 }
 
-export default aqua_shrimpFarm;
+export default shrimpFarm;

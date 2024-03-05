@@ -1,10 +1,13 @@
-import chickenCoopImage from '../../images/chickenCoop.png';
+import chickens1 from '../../images/pastures/chickens/chickens-1.jpeg';
+import chickens2 from '../../images/pastures/chickens/chickens-2.jpeg';
+import chickens3 from '../../images/pastures/chickens/chickens-3.jpeg';
+import chickens4 from '../../images/pastures/chickens/chickens-4.jpeg';
 
-const pasture_chickenCoop = {
+const chickenCoop = {
     "name": "Chicken Coop",
     "type": "brown",
     "description": "Cozy chicken coops nestled among the trees, where hens scratch and peck for bugs. Fresh eggs are collected daily, providing a nutritious source of protein.",
-    "images": chickenCoopImage,
+    "images": [chickens1, chickens2, chickens3, chickens4],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +44,4 @@ const pasture_chickenCoop = {
     ]
 }
 
-export default pasture_chickenCoop;
+export default chickenCoop;

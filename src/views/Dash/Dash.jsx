@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Book from "../../components/Book";
 import piece1 from '../../images/player-pieces/piece-1.png';
 import piece2 from '../../images/player-pieces/piece-2.png';
@@ -19,37 +19,70 @@ import fiveHundredDoven from '../../images/money/five-hundred-doven.png';
 
 import Dice from "../../components/Dice";
 import PropertyCard from "../../components/PropertyCard/PropertyCard";
+import PropertyCardAlt from "../../components/PropertyCardAlt";
 
 import wheatField from "../../data/fields/wheatField";
-import PropertyCardAlt from "../../components/PropertyCardAlt";
+import cornfield from '../../data/fields/cornfield';
+import barleyMeadow from '../../data/fields/barleyMeadow';
+import soybeanField from '../../data/fields/soybeanField';
+import potatoPatch from '../../data/fields/potatoPatch';
+import appleOrchard from '../../data/orchards/appleOrchard';
+import cherryOrchard from '../../data/orchards/cherryOrchard';
+import peachOrchard from '../../data/orchards/peachOrchard';
+import plumOrchard from '../../data/orchards/plumOrchard';
+import lemonGrove from '../../data/orchards/lemonGrove';
+import orangeGrove from '../../data/orchards/orangeGrove';
+import chickenCoop from '../../data/pastures/chickenCoop';
+import dairyCow from '../../data/pastures/dairyCow';
+import goatFarm from '../../data/pastures/goatFarm';
+import pigPen from '../../data/pastures/pigPen';
+import sheepMeadow from '../../data/pastures/sheepMeadow';
+import horseRanch from '../../data/pastures/horseRanch';
+import shrimpFarm from '../../data/fisheries/shrimpFarm';
+import oysterFarm from '../../data/fisheries/oysterFarm';
+import crawfishFarm from '../../data/fisheries/crawfishFarm';
+import tuna from '../../data/fisheries/tuna';
+import swordfish from '../../data/fisheries/swordfish';
+import Popup from '../../components/Popup';
 
 const Dash = () => {
 
     const [isSpread, setIsSpread] = useState(false);
+    const [viewProperty, setViewProperty] = useState();
+    const [viewModal, setViewModal] = useState(false);
+
+    useEffect(() => {
+        console.log('run effect')
+        if(viewProperty){
+            //trigger modal
+            console.log('set modal true')
+            setViewModal(true);
+        }
+    }, [viewProperty])
 
     const spread = () => {
-        console.log('spread called', isSpread);
         let propertyCards = 22;
 
         if(!isSpread){
             console.log('add class')
             for(let i = 1; i < propertyCards + 1; i++){
-                console.log(`property-card-alt-${i}`)
-                console.log('document', document.getElementById(`property-card-alt-${i}`))
                 document.getElementById(`property-card-alt-${i}`).classList.add(`property-card-alt-${i}-spread`);
             }
-        }else{
-            console.log('remove class')
-            for(let i = 1; i < propertyCards + 1; i++){
-                document.getElementById(`property-card-alt-${i}`).classList.remove(`property-card-alt-${i}-spread`);
-            }
+            setIsSpread(!isSpread);
         }
-        setIsSpread(!isSpread);
+        // }else{
+        //     console.log('remove class')
+        //     for(let i = 1; i < propertyCards + 1; i++){
+        //         document.getElementById(`property-card-alt-${i}`).classList.remove(`property-card-alt-${i}-spread`);
+        //     }
+        // }
     }
 
     return (
         <div className='container'>
             <br /><br />
+            {console.log('is spread', isSpread)}
+            {console.log('view modal', viewModal)}
             <div style={{flexDirection: 'column'}}>
                 <div className='row h-100'>
 
@@ -187,74 +220,81 @@ const Dash = () => {
 
                 <div className='property-card-alt-pile' onClick={spread}>
                     <div id='property-card-alt-1' className='property-card-alt-1'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={swordfish} />
                     </div>
                     <div id='property-card-alt-2' className='property-card-alt-2'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={tuna} />
                     </div>
                     <div id='property-card-alt-3' className='property-card-alt-3'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={crawfishFarm} />
                     </div>
                     <div id='property-card-alt-4' className='property-card-alt-4'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={oysterFarm} />
                     </div>
                     <div id='property-card-alt-5' className='property-card-alt-5'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={shrimpFarm} />
                     </div>
                     <div id='property-card-alt-6' className='property-card-alt-6'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={horseRanch} />
                     </div>
                     <div id='property-card-alt-7' className='property-card-alt-7'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={sheepMeadow} />
                     </div>
                     <div id='property-card-alt-8' className='property-card-alt-8'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={pigPen} />
                     </div>
                     <div id='property-card-alt-9' className='property-card-alt-9'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={goatFarm} />
                     </div>
                     <div id='property-card-alt-10' className='property-card-alt-10'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={dairyCow} />
                     </div>
                     <div id='property-card-alt-11' className='property-card-alt-11'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={chickenCoop} />
                     </div>
                     <div id='property-card-alt-12' className='property-card-alt-12'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={orangeGrove} />
                     </div>
                     <div id='property-card-alt-13' className='property-card-alt-13'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={lemonGrove} />
                     </div>
                     <div id='property-card-alt-14' className='property-card-alt-14'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={plumOrchard} />
                     </div>
                     <div id='property-card-alt-15' className='property-card-alt-15'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={peachOrchard} />
                     </div>
                     <div id='property-card-alt-16' className='property-card-alt-16'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={cherryOrchard} />
                     </div>
                     <div id='property-card-alt-17' className='property-card-alt-17'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={appleOrchard} />
                     </div>
                     <div id='property-card-alt-18' className='property-card-alt-18'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={potatoPatch} />
                     </div>
                     <div id='property-card-alt-19' className='property-card-alt-19'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={soybeanField} />
                     </div>
                     <div id='property-card-alt-20' className='property-card-alt-20'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={barleyMeadow} />
                     </div>
                     <div id='property-card-alt-21' className='property-card-alt-21'>
-                    <PropertyCardAlt data={wheatField} />
+                    <PropertyCardAlt data={cornfield} />
                     </div>
-                    <div id='property-card-alt-22' className='property-card-alt-22'>
+                    <div id='property-card-alt-22' onClick={() => {
+                        let res = document.getElementById('property-card-alt-22').classList;
+                        console.log('res', res)
+                        if(res.length > 1){
+                            console.log('set view prop')
+                            setViewProperty(<PropertyCard data={wheatField} />)
+                        }
+                    }} className='property-card-alt-22'>
                     <PropertyCardAlt data={wheatField} />
                     </div>
                 </div>
                 
-     
+                {viewModal ? <Popup component={viewProperty} closeModal={setViewModal} /> : <></>}
             </div>
         </div>
     )

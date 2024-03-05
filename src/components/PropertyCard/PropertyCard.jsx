@@ -24,7 +24,7 @@ const PropertyCard = ({ data, upgrades, season, mortgage }) => {
 
             <div 
                 className='property-card-header' 
-                style={{backgroundColor: getBackgroundColor(data.type)}} 
+                style={{backgroundColor: getBackgroundColor(data.type), paddingTop: '8px'}} 
                 onClick={() => setView('')}>
                 <p className='bold'>{data.name}</p>
             </div>

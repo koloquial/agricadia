@@ -1,10 +1,13 @@
-import cornfieldImage from '../../images/cornfield.png';
+import corn1 from '../../images/fields/corn/corn-1.jpeg';
+import corn2 from '../../images/fields/corn/corn-2.jpeg';
+import corn3 from '../../images/fields/corn/corn-3.jpeg';
+import corn4 from '../../images/fields/corn/corn-4.jpeg';
 
-const field_cornfield = {
+const cornfield = {
     "name": "Cornfield",
     "type": "yellow",
     "description": "Towering stalks of corn stand tall and proud, their golden ears bursting with plump kernels. A scarecrow guards the edge of the field, keeping pests at bay.",
-    "image": cornfieldImage,
+    "images": [corn1, corn2, corn3, corn4],
     "purchase": 60,
     "mortgage": 30,
     "income": 4,
@@ -41,4 +44,4 @@ const field_cornfield = {
     ]
 }
 
-export default field_cornfield;
+export default cornfield;

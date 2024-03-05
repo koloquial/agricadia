@@ -1,10 +1,12 @@
-import plumOrchardImage from '../../images/plumOrchard.png';
+import plum1 from '../../images/orchards/plums/plums-1.jpeg';
+import plum2 from '../../images/orchards/plums/plums-2.jpeg';
+import plum3 from '../../images/orchards/plums/plums-3.jpeg';
 
-const orchard_plumOrchard = {
+const plumOrchard = {
     "name": "Plum Orchard",
     "type": "purple",
     "description": "Verdant plum trees, heavy with plump fruits in shades of purple and red, fill the orchard. The air is perfumed with the sweet fragrance of plum blossoms.",
-    "image": plumOrchardImage,
+    "images": [plum1, plum2, plum3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +43,4 @@ const orchard_plumOrchard = {
     ]
 }
 
-export default orchard_plumOrchard;
+export default plumOrchard;

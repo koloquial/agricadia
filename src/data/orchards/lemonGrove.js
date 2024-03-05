@@ -1,10 +1,13 @@
-import lemonGroveImage from '../../images/lemonGrove.png';
+import lemons1 from '../../images/orchards/lemons/lemons-1.jpeg';
+import lemons2 from '../../images/orchards/lemons/lemons-2.jpeg';
+import lemons3 from '../../images/orchards/lemons/lemons-3.jpeg';
+import lemons4 from '../../images/orchards/lemons/lemons-4.jpeg';
 
-const orchard_lemonGrove = {
+const lemonGrove = {
     "name": "Lemon Grove",
     "type": "purple",
     "description": "Rows of lemon trees laden with bright yellow fruits characterize the lemon grove. The air is infused with the zesty fragrance of lemon blossoms, invigorating the senses.",
-    "image": lemonGroveImage,
+    "images": [lemons1, lemons2, lemons3, lemons4],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -41,4 +44,4 @@ const orchard_lemonGrove = {
     ]
 }
 
-export default orchard_lemonGrove;
+export default lemonGrove;

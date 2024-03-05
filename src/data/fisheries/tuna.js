@@ -1,10 +1,12 @@
-import tunaImage from '../../images/tuna.png';
+import tuna1 from '../../images/fisheries/tuna/tuna-1.jpeg';
+import tuna2 from '../../images/fisheries/tuna/tuna-2.jpeg';
+import tuna3 from '../../images/fisheries/tuna/tuna-3.jpeg';
 
-const aqua_tuna = {
+const tuna = {
     "name": "Bluefin Tuna Angling",
     "type": "blue",
     "description": "Prepare for an exhilarating Tuna Fishing Expedition, where you'll venture into the deep waters in pursuit of the mighty tuna. Equip your vessel with specialized gear, harness your angling skills, and get ready for the adventure of a lifetime as you aim to reel in these powerful and prized fish.",
-    "image": tunaImage,
+    "images": [tuna1, tuna2, tuna3],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,
@@ -41,4 +43,4 @@ const aqua_tuna = {
     ]
 }
 
-export default aqua_tuna;
+export default tuna;

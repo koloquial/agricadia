@@ -1,10 +1,12 @@
-import orangeGroveImage from '../../images/orangeGrove.png';
+import apples1 from '../../images/orchards/apples/apples-1.jpeg';
+import apples2 from '../../images/orchards/apples/apples-2.jpeg';
+import apples3 from '../../images/orchards/apples/apples-3.jpeg';
 
-const orchard_orangeGrove = {
-    "name": "Orange Grove",
-    "type": "purple",
+const appleOrchard = {
+    "name": "Apple Orchard",
+    "type": "red",
     "description": "Endless rows of soybean plants stretch out across the landscape, their delicate leaves fluttering in the breeze. Bees buzz among the flowers, pollinating the plants and ensuring a healthy crop.",
-    "image": orangeGroveImage,
+    "images": [apples1, apples2, apples3],
     "purchase": 140,
     "mortgage": 70,
     "income": 10,
@@ -14,31 +16,31 @@ const orchard_orangeGrove = {
     "upgradeCost": 100,
     "upgrades": [
         {
-            "name": "Disease-Resistant Rootstock",
+            "name": "Tree Pruning",
             "value": 40,
             "dependency": ["Autumn"]
         },
         {
-            "name": "Bird Repellent",
+            "name": "Fertilizer Application",
             "value": 100,
             "dependency": ["Winter"]
         },
         {
-            "name": "Pollinator Habitat Enhancement",
+            "name": "Drip Irrigation",
             "value": 300,
             "dependency": ["Summer"]
         },
         {
-            "name": "Soil Moisture Monitoring",
+            "name": "Integrated Pest Management",
             "value": 125,
             "dependency": ["Spring"]
         },
         {
-            "name": "Windbreak Planting",
-            "value": 150,
+            "name": "Harvesting Equipment",
+            "value": 125,
             "dependency": []
         }
     ]
 }
 
-export default orchard_orangeGrove;
+export default appleOrchard;

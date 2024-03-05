@@ -1,10 +1,11 @@
-import barleyMeadowImage from '../../images/barleyMeadow.png';
+import barley1 from '../../images/fields/barley/barley-1.jpeg';
+import barley2 from '../../images/fields/barley/barley-2.jpeg';
 
-const field_barleyMeadow = {
+const barleyMeadow = {
     "name": "Barley Meadow",
     "type": "green",
     "description": "Rolling hills carpeted with fields of barley, their slender stalks swaying gently in the wind. Birds flit among the plants, feasting on insects and adding to the bucolic scene.",
-    "image": barleyMeadowImage,
+    "images": [barley1, barley2],
     "purchase": 120,
     "mortgage": 60,
     "income": 8,
@@ -41,4 +42,4 @@ const field_barleyMeadow = {
     ]
 }
 
-export default field_barleyMeadow;
+export default barleyMeadow;

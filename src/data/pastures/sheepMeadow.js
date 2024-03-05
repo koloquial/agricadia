@@ -1,8 +1,8 @@
-import sheep1 from '../../images/sheep-1.jpeg';
-import sheep2 from '../../images/sheep-2.jpeg'
-import sheep3 from '../../images/sheep-3.jpeg'
+import sheep1 from '../../images/pastures/sheep/sheep-1.jpeg';
+import sheep2 from '../../images/pastures/sheep/sheep-2.jpeg';
+import sheep3 from '../../images/pastures/sheep/sheep-3.jpeg';
 
-const pasture_sheepMeadow = {
+const sheepMeadow = {
     "name": "Sheep Meadow",
     "type": "blue",
     "description": "Rolling hills covered with soft, green grass, where fluffy sheep graze peacefully. The gentle bleating of lambs echoes across the meadow, creating a serene atmosphere.",
@@ -43,4 +43,4 @@ const pasture_sheepMeadow = {
     ]
 }
 
-export default pasture_sheepMeadow;
+export default sheepMeadow;
